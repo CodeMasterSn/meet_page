@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .first-col img,
+.second-col img {
+    width: 100%;
+    height: 100%;
+}
+
+/* title of header */
+
+.header .container .intro {
+    position: relative;
+    margin-left: 10rem;
+}
+
+.header .intro h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 60px;
+    width: 75%;
+    text-align: center;
+}
+
+.header .intro h2.meet {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-right: 10rem;
+    line-height: 20px;
+    text-align: center;
+    color: #87879D;
+}
+
+/* button */
+
+.header .container .intro .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-left: -10rem;
+}
+
+.header .container .intro .first-button {
+    background: #4D96A9;
+    border: none;
+    border-radius: 25px;
+    margin-right: -6rem;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    width: 25%;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.header .container .intro .first-button span {
+    color: #8FE3F9;
+}
+
+.header .container .intro .first-button:hover {
+    background: #71C0D4;
+}
+
+.header .container .intro .second-button {
+    border: none;
+    background: #855FB1;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    width: 22%;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.header .container .intro .second-button:hover {
+    background: #D9B8FF;
+}
+
+/* number of page */
+.header .num-page {
+    position: relative;
+    margin: 8rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .num-page .one::before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #87879D;
+    width: 55px;
+    transform: rotate(90deg);
+    margin-top: -2.25rem;
+    margin-left: -1.2rem;
+}
+
+.header .num-page .one {
+    border: 1px solid #87879D;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+/* About */
+.about .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 8.5rem;
+}
+
+/* About images */
+
+.about .container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.about-text .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+/* title of about */
+
+.about-text .first-title {
+    margin-top: 2rem;
+}
+
+.about-text h3 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #4D96A9;
+}
+
+.about-text h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    width: 45%;
+    margin-top: 1rem;
+    margin-left: 13rem;
+}
+
+.about-text p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #87879D;
+    margin: 2rem;
+    width: 55%;
+    margin-left: 14.5rem;
+}
+
+/* num of pages */
+
+.about-text .num-page {
+    position: relative;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.about-text .num-page .two::before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #87879D;
+    width: 55px;
+    transform: rotate(90deg);
+    margin-top: -2.25rem;
+    margin-left: -1.2rem;
+}
+
+.about-text .num-page .two {
+    border: 1px solid #87879D;
+    border-radius: 50%;
+    padding: 7px;
+    background: white;
+}
+
+/* footer */
+
+.footer {
+    background: url('../image/desktop/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin-top: -9.3rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7rem;
+}
+
+.footer .overlay {
+    position: absolute;
+    background: #4D96A9;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.7;
+}
+
+.footer .text-first-footer,
+.footer .text-second-footer,
+.footer .button {
+    z-index: 999999;
+    margin-top: 7rem;
+}
+
+.footer .text-first-footer p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FAFAFA;
+    width: 75%;
+}
+
+.footer .text-second-footer p {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    color: #FAFAFA;
+    width: 45%;
+}
+
+.footer .button .first-button {
+    position: absolute;
+    border: none;
+    background: #855FB1;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    width: 13%;
+    padding: 15px;
+    margin-top: -2rem;
+    margin-left: -15rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer .button .first-button:hover {
+    background: #D9B8FF;
+}
+
+/* responsive min-width: 600px and max-width: 790px */
+@media screen and (min-width: 500px) and (max-width: 790px) {
+    body {
+        width: 100%;
+    }
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    .header .container .intro {
+        position: absolute;
+        margin-top: 45rem;
+    }
+
+    .header .container .intro h1 {
+        position: relative;
+        margin-top: -4rem;
+        margin-left: 5rem;
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 35px;
+        width: 45%;
+    }
+
+    /* number of page */
+    .header .num-page {
+        position: relative;
+        margin: 25rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* About */
+    .about .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 4rem;
+    }
+
+    .about .container img {
+        margin-top: -30rem;
+        margin-left: 1.5rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* title of about */
+
+    .about-text {
+        margin-top: -12rem;
+        margin-left: 3rem;
+    }
+
+    .about-text h3 {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
+        color: #4D96A9;
+    }
+
+    .about-text h1 {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        width: 60%;
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
+
+    .about-text p {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center;
+        color: #87879D;
+        margin: 2rem;
+        width: 80%;
+        margin-left: 3.5rem;
+    }
+
+    /* footer */
+
+    .footer {
+        background: url('../image/desktop/image-footer.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 84vh;
+        margin-top: -10.3rem;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7rem;
+    }
+    
+    .footer .overlay{
+        height: 84vh;
+    }
+
+    .footer .text-first-footer p{
+        margin-left: 3%;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .footer .text-second-footer p{
+        margin-top: -4rem;
+        margin-left: -4rem;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .button .first-button{
+        margin-top: -5rem;
+        margin-left: -10rem;
+        width: 25%;
+    }
+}
+
+/* responsive mobile max-width: 375px */
+@media screen and (max-width: 375px) /* and (max-width: 790px) */ {
+    body {
+        width: 100%;
+    }
+
+    .header .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    .header .container .intro {
+        position: absolute;
+        margin-top: 45rem;
+    }
+
+    .header .container .intro h1 {
+        position: relative;
+        margin-top: -4rem;
+        margin-left: 5rem;
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 35px;
+        width: 45%;
+    }
+
+    /* number of page */
+    .header .num-page {
+        position: relative;
+        margin: 25rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* About */
+    .about .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 4rem;
+    }
+
+    .about .container img {
+        margin-top: -30rem;
+        margin-left: 1.5rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    /* title of about */
+
+    .about-text {
+        margin-top: -12rem;
+        margin-left: 3rem;
+    }
+
+    .about-text h3 {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
+        color: #4D96A9;
+    }
+
+    .about-text h1 {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        width: 60%;
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
+
+    .about-text p {
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        text-align: center;
+        color: #87879D;
+        margin: 2rem;
+        width: 80%;
+        margin-left: 3.5rem;
+    }
+
+    /* footer */
+
+    .footer {
+        background: url('../image/desktop/image-footer.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 84vh;
+        margin-top: -10.3rem;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7rem;
+    }
+    
+    .footer .overlay{
+        height: 84vh;
+    }
+
+    .footer .text-first-footer p{
+        margin-left: 3%;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .footer .text-second-footer p{
+        margin-top: -4rem;
+        margin-left: -4rem;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer .button .first-button{
+        margin-top: -5rem;
+        margin-left: -10rem;
+        width: 25%;
+    }
+}
